@@ -1,24 +1,32 @@
 {
-  "name": "project-template",
+  "name": "node-project-template",
   "version": "0.1.0",
   "description": "A repository template for node projects.",
   "main": "index.js",
   "scripts": {
     "info": "node -e 'const { \"scripts-info\": info = {} } = require(\"./package.json\"); console.table(info);'",
     "dev:frontend": "npm run dev --workspace=frontend",
-    "build:frontend": "npm run build --workspace=frontend"
+    "build:frontend": "npm run build --workspace=frontend",
+    "lint": "eslint .",
+    "lint:frontend": "npm run lint --workspace=frontend"
   },
   "scripts-info": {
     "dev:frontend": "Run the frontend app in development mode",
-    "build:frontend": "Build the frontend app"
+    "build:frontend": "Build the frontend app",
+    "lint": "Run ESLint across all workspaces",
+    "lint:frontend": "Run ESLint for the frontend workspace"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scotthorban/node-project-template.git"
   },
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
     "@types/node": "^26.1.1",
-    "typescript": "^7.0.2"
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.20.0"
   },
   "keywords": [],
   "author": "161889944+scotthorban@users.noreply.github.com",
