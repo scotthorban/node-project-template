@@ -16,9 +16,12 @@ This project template uses [npm](https://docs.npmjs.com/downloading-and-installi
 project management.
 
 ```shell
+# Installs all workspace dependencies by default
+npm install
 ```
 
 ### 3. Local Run
 
 ```shell
+npm run dev:frontend
 ```
