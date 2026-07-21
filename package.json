@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "lint:frontend": "npm run lint --workspace=frontend",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "test": "npm run test --workspace=frontend",
+    "coverage": "npm run coverage --workspace=frontend"
   },
   "scripts-info": {
     "dev:frontend": "Run the frontend app in development mode",
@@ -18,7 +20,9 @@
     "lint": "Run ESLint across all workspaces",
     "lint:frontend": "Run ESLint for the frontend workspace",
     "format": "Auto-format all project files with Prettier",
-    "check-format": "Check if project files meet Prettier formatting standards"
+    "check-format": "Check if project files meet Prettier formatting standards",
+    "test": "Run unit tests and write results to reports/test-results.json",
+    "coverage": "Run test coverage and write results to reports/coverage-summary.json"
   },
   "repository": {
     "type": "git",
@@ -26,13 +30,19 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^26.1.1",
+    "@vitest/coverage-v8": "^4.1.10",
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
     "globals": "^15.14.0",
+    "jsdom": "^29.1.1",
     "prettier": "^3.4.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.20.0"
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^4.1.10"
   },
   "keywords": [],
   "author": "161889944+scotthorban@users.noreply.github.com",
