@@ -7,4 +7,4 @@ This project adheres to [semantic versioning](https://semver.org/).
 
 ## 0.1.0
 
-- [#1](https://github.com/scotthorban/node-project-template/issues/1) - Initial commit. 
+- [#1](https://github.com/scotthorban/node-project-template/issues/1) - Initial commit.

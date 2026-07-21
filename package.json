@@ -8,13 +8,17 @@
     "dev:frontend": "npm run dev --workspace=frontend",
     "build:frontend": "npm run build --workspace=frontend",
     "lint": "eslint .",
-    "lint:frontend": "npm run lint --workspace=frontend"
+    "lint:frontend": "npm run lint --workspace=frontend",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "scripts-info": {
     "dev:frontend": "Run the frontend app in development mode",
     "build:frontend": "Build the frontend app",
     "lint": "Run ESLint across all workspaces",
-    "lint:frontend": "Run ESLint for the frontend workspace"
+    "lint:frontend": "Run ESLint for the frontend workspace",
+    "format": "Auto-format all project files with Prettier",
+    "check-format": "Check if project files meet Prettier formatting standards"
   },
   "repository": {
     "type": "git",
@@ -24,7 +28,9 @@
     "@eslint/js": "^9.18.0",
     "@types/node": "^26.1.1",
     "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
     "globals": "^15.14.0",
+    "prettier": "^3.4.2",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.20.0"
   },
