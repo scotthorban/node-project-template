@@ -13,7 +13,8 @@
     "check-format": "prettier --check .",
     "test": "npm run test --workspace=frontend",
     "coverage": "npm run coverage --workspace=frontend",
-    "check": "npm run check-format && npm run lint && npm run test && npm run coverage"
+    "check": "npm run check-format && npm run lint && npm run test && npm run coverage",
+    "install-hooks": "prek install"
   },
   "scripts-info": {
     "dev:frontend": "Run the frontend app in development mode",
@@ -24,7 +25,8 @@
     "check-format": "Check if project files meet Prettier formatting standards",
     "test": "Run unit tests and write results to reports/test-results.json",
     "coverage": "Run test coverage and write results to reports/coverage-summary.json",
-    "check": "Run code formatting check, linting, unit tests, and coverage analysis"
+    "check": "Run code formatting check, linting, unit tests, and coverage analysis",
+    "install-hooks": "Install prek git hooks in the repository"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
+    "@j178/prek": "^0.4.8",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
