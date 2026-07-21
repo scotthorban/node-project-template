@@ -12,7 +12,8 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "test": "npm run test --workspace=frontend",
-    "coverage": "npm run coverage --workspace=frontend"
+    "coverage": "npm run coverage --workspace=frontend",
+    "check": "npm run check-format && npm run lint && npm run test && npm run coverage"
   },
   "scripts-info": {
     "dev:frontend": "Run the frontend app in development mode",
@@ -22,7 +23,8 @@
     "format": "Auto-format all project files with Prettier",
     "check-format": "Check if project files meet Prettier formatting standards",
     "test": "Run unit tests and write results to reports/test-results.json",
-    "coverage": "Run test coverage and write results to reports/coverage-summary.json"
+    "coverage": "Run test coverage and write results to reports/coverage-summary.json",
+    "check": "Run code formatting check, linting, unit tests, and coverage analysis"
   },
   "repository": {
     "type": "git",
