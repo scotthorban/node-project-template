@@ -1,0 +1,63 @@
+{
+  "name": "node-project-template",
+  "version": "0.1.0",
+  "description": "A repository template for node projects.",
+  "main": "index.js",
+  "scripts": {
+    "info": "node -e 'const { \"scripts-info\": info = {} } = require(\"./package.json\"); console.table(info);'",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "lint": "eslint .",
+    "lint:frontend": "npm run lint --workspace=frontend",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "npm run test --workspace=frontend",
+    "coverage": "npm run coverage --workspace=frontend",
+    "check": "npm run check-format && npm run lint && npm run test && npm run coverage",
+    "install-hooks": "prek install"
+  },
+  "scripts-info": {
+    "dev:frontend": "Run the frontend app in development mode",
+    "build:frontend": "Build the frontend app",
+    "lint": "Run ESLint across all workspaces",
+    "lint:frontend": "Run ESLint for the frontend workspace",
+    "format": "Auto-format all project files with Prettier",
+    "check-format": "Check if project files meet Prettier formatting standards",
+    "test": "Run unit tests and write results to reports/test-results.json",
+    "coverage": "Run test coverage and write results to reports/coverage-summary.json",
+    "check": "Run code formatting check, linting, unit tests, and coverage analysis",
+    "install-hooks": "Install prek git hooks in the repository"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotthorban/node-project-template.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@j178/prek": "^0.4.8",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^26.1.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.4.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^4.1.10"
+  },
+  "keywords": [],
+  "author": "161889944+scotthorban@users.noreply.github.com",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/scotthorban/node-project-template/issues"
+  },
+  "homepage": "https://github.com/scotthorban/node-project-template#readme",
+  "workspaces": [
+    "frontend"
+  ]
+}
