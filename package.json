@@ -1,0 +1,34 @@
+{
+  "name": "project-template",
+  "version": "0.1.0",
+  "description": "A repository template for node projects.",
+  "main": "index.js",
+  "scripts": {
+    "info": "node -e 'const { \"scripts-info\": info = {} } = require(\"./package.json\"); console.table(info);'",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build:frontend": "npm run build --workspace=frontend"
+  },
+  "scripts-info": {
+    "dev:frontend": "Run the frontend app in development mode",
+    "build:frontend": "Build the frontend app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotthorban/node-project-template.git"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  },
+  "keywords": [],
+  "author": "161889944+scotthorban@users.noreply.github.com",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/scotthorban/node-project-template/issues"
+  },
+  "homepage": "https://github.com/scotthorban/node-project-template#readme",
+  "workspaces": [
+    "frontend"
+  ]
+}
